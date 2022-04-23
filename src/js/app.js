@@ -50,6 +50,8 @@ const breakpoints = {
       });
    };
 
-   breakpoint.addListener(breakpointChecker);
+   breakpoint.addEventListener("change", () => {
+      breakpointChecker()
+   });
    breakpointChecker();
 })();
