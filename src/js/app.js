@@ -53,5 +53,6 @@ const breakpoints = {
    breakpoint.addEventListener("change", () => {
       breakpointChecker()
    });
+   
    breakpointChecker();
 })();
